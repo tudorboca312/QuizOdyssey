@@ -1,0 +1,93 @@
+.homepage{
+    display: flex;
+    flex-direction: row;
+}
+img{
+    width: 35rem;
+}
+.left--side, .right--side{
+    flex: 1;
+    width: 50%;
+    height: 78vh;
+    padding: 1rem;
+}
+.left--side{
+    display: flex;
+    padding-bottom: 10rem;
+}
+.right--side{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content:  center; */
+}
+.quiz--title{
+    font-size: 2.25rem;
+    font-weight: 700;
+    padding-top: 7rem;
+}
+.settings{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+    gap: 1rem;
+
+}
+.name, .category, .difficulty, .btn{
+    width: 60%;
+}
+.btn{
+    background-color: #6c63ff !important;
+}
+.errorMessage {
+    color: #ff0000;
+    background-color: #ffe6e6;
+    border: 1px solid #ff0000;
+    padding: 10px;
+    margin: 10px 0;
+    width: 60%;
+    text-align: center;
+  }
+
+  @media (max-width: 1024px) {
+    .photo--homepage{
+        height: 25rem;
+        width: 25rem;
+    }
+    .left--side{
+        justify-content: center;
+        align-items: center;
+    }
+
+  }
+
+  @media (max-width: 768px) {
+    .homepage{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        /* padding-top: 3rem; */
+        /* padding-bottom: 3.4rem; */
+        align-items: center;
+        justify-content: center;
+    }
+    .photo--homepage{
+        width: 15rem;
+        height: 12rem;
+    }
+    .left--side{
+        padding-bottom: 1rem;
+    }
+    .right--side{
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    
+    .quiz--title{
+        padding-top: 1rem;
+    }
+
+}

@@ -1,0 +1,48 @@
+.upper--side {
+    width: 100%;
+    font-weight: 500;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 10px;
+  }
+  .easy {
+    color: green;
+  }
+  .medium {
+    color: rgb(195, 195, 0);
+  }
+  .hard {
+    color: red;
+  }
+  .yes {
+    padding-right: 7.5rem;
+  }
+  
+  /* Media queries for tablet and mobile devices */
+  @media screen and (max-width: 1024px) {
+    .yes {
+      padding-right: 3rem;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .upper--side {
+      font-size: 1rem;
+    }
+    .yes {
+      padding-right: 1rem;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .upper--side {
+      font-size: 0.8rem;
+    }
+    .yes {
+      padding-right: 0;
+    }
+  }
+  

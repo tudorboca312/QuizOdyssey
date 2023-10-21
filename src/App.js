@@ -1,24 +1,60 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import "./App.css";
+import { useState } from "react";
+import Header from "../src/components/Header/Header";
+import Homepage from "./components/Homepage/Homepage";
+import Game from "./components/Game/Game";
+import Results from "./components/Results/Results";
+import axios from "axios";
 
 function App() {
+  const [name, setName] = useState("");
+  const [questions, setQuestions] = useState();
+  const [score, setScore] = useState(0);
+  const fetchQuestions = async (category = "", difficulty = "") => {
+    const { data } = await axios.get(
+      `https://opentdb.com/api.php?amount=10${
+        category && `&category=${category}`
+      }${difficulty && `&difficulty=${difficulty}`}&type=multiple`
+    );
+    setQuestions(data.results);
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <div className="app">
+        <Header />
+        <Routes>
+          <Route
+            path="/"
+            exact
+            element={
+              <Homepage
+                name={name}
+                setName={setName}
+                fetchQuestions={fetchQuestions}
+                setScore={setScore}
+              />
+            }
+          />
+          <Route
+            path="/game"
+            element={
+              <Game
+                name={name}
+                questions={questions}
+                score={score}
+                setQuestions={setQuestions}
+                setScore={setScore}
+              />
+            }
+          />
+          <Route
+            path="/results"
+            element={<Results score={score} setScore={setScore} />}
+          />
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 
