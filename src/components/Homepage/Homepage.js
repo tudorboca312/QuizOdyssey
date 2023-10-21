@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import Categories from "./Categories";
 import ErrorMessage from "./ErrorMessage";
 import "./Homepage.css";
+import imageLogo from "./imag001.svg";
 
 export default function Homepage({ name, setName, fetchQuestions, setScore }) {
   const [category, setCategory] = useState("");
@@ -26,7 +27,7 @@ export default function Homepage({ name, setName, fetchQuestions, setScore }) {
   return (
     <div className="homepage">
       <div className="left--side">
-        <img src="/imag001.svg" alt="quizLogo" className="photo--homepage" />
+        <img src={imageLogo} alt="quizLogo" className="photo--homepage" />
       </div>
       <div className="right--side">
         <h2 className="quiz--title">Quiz Settings</h2>
