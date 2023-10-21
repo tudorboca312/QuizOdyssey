@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/QuizOdyssey/static/css/main.4c2a7090.css",
+    "main.js": "/QuizOdyssey/static/js/main.37b2c692.js",
+    "index.html": "/QuizOdyssey/index.html",
+    "main.4c2a7090.css.map": "/QuizOdyssey/static/css/main.4c2a7090.css.map",
+    "main.37b2c692.js.map": "/QuizOdyssey/static/js/main.37b2c692.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4c2a7090.css",
+    "static/js/main.37b2c692.js"
+  ]
+}
