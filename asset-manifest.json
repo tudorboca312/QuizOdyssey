@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/QuizOdyssey/static/css/main.4c2a7090.css",
-    "main.js": "/QuizOdyssey/static/js/main.37b2c692.js",
+    "main.css": "/QuizOdyssey/static/css/main.89da8bcf.css",
+    "main.js": "/QuizOdyssey/static/js/main.834892c1.js",
+    "static/media/imag001.png": "/QuizOdyssey/static/media/imag001.0e7ebb14bd1a4c69b55d.png",
     "index.html": "/QuizOdyssey/index.html",
-    "main.4c2a7090.css.map": "/QuizOdyssey/static/css/main.4c2a7090.css.map",
-    "main.37b2c692.js.map": "/QuizOdyssey/static/js/main.37b2c692.js.map"
+    "main.89da8bcf.css.map": "/QuizOdyssey/static/css/main.89da8bcf.css.map",
+    "main.834892c1.js.map": "/QuizOdyssey/static/js/main.834892c1.js.map"
   },
   "entrypoints": [
-    "static/css/main.4c2a7090.css",
-    "static/js/main.37b2c692.js"
+    "static/css/main.89da8bcf.css",
+    "static/js/main.834892c1.js"
   ]
 }
