@@ -3,7 +3,8 @@
     flex-direction: row;
 }
 img{
-    width: 35rem;
+    width: 28rem;
+    height: 22rem;
 }
 .left--side, .right--side{
     flex: 1;
@@ -14,12 +15,13 @@ img{
 .left--side{
     display: flex;
     padding-bottom: 10rem;
+    justify-content: center;
+    align-items: center;
 }
 .right--side{
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content:  center; */
 }
 .quiz--title{
     font-size: 2.25rem;
@@ -52,24 +54,10 @@ img{
   }
 
   @media (max-width: 1024px) {
-    .photo--homepage{
-        height: 25rem;
-        width: 25rem;
-    }
-    .left--side{
-        justify-content: center;
-        align-items: center;
-    }
-
-  }
-
-  @media (max-width: 768px) {
     .homepage{
         display: flex;
         width: 100%;
         flex-direction: column;
-        /* padding-top: 3rem; */
-        /* padding-bottom: 3.4rem; */
         align-items: center;
         justify-content: center;
     }
@@ -90,4 +78,32 @@ img{
         padding-top: 1rem;
     }
 
-}
+
+  }
+
+  /* @media (max-width: 768px) {
+    .homepage{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .photo--homepage{
+        width: 15rem;
+        height: 12rem;
+    }
+    .left--side{
+        padding-bottom: 1rem;
+    }
+    .right--side{
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    
+    .quiz--title{
+        padding-top: 1rem;
+    }
+
+} */

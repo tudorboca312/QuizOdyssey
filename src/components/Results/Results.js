@@ -15,7 +15,7 @@ export default function Results({ score, setScore }) {
     }
   };
   const handleResetScore = () => {
-    navigate("/");
+    navigate("/QuizOdyssey");
     return setScore(0);
   };
   return (

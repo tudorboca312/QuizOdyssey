@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import "./App.css";
 import { useState } from "react";
 import Header from "../src/components/Header/Header";
@@ -24,9 +24,11 @@ function App() {
       <div className="app">
         <Header />
         <Routes>
+          {/* Redirect from root to /QuizOdyssey */}
+          <Route path="/" element={<Navigate to="/QuizOdyssey" replace />} />
+
           <Route
-            path="/"
-            exact
+            path="/QuizOdyssey"
             element={
               <Homepage
                 name={name}

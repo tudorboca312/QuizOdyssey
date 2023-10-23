@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import Categories from "./Categories";
 import ErrorMessage from "./ErrorMessage";
 import "./Homepage.css";
-import imageLogo from "./imag001.svg";
+import imageLogo from "../photos/imag001.png";
 
 export default function Homepage({ name, setName, fetchQuestions, setScore }) {
   const [category, setCategory] = useState("");
