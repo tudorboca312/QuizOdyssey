@@ -24,7 +24,6 @@ function App() {
       <div className="app">
         <Header />
         <Routes>
-          {/* Redirect from root to /QuizOdyssey */}
           <Route path="/" element={<Navigate to="/QuizOdyssey" replace />} />
 
           <Route
